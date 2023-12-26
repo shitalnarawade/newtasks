@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+     <style>
+       
+
+/* Change background color of div with id = "header" to green color
+
+4. Add a bottom border of orange color to div with id = "header"
+
+5. Change the font color of 'Fruits In Basket' from black to green
+
+6. Introduce a paragraph element with text "Please visit us again" inside the div with id = "thanks" */
+     </style>
+
+  </head>
+  <body style="margin: 0">
+    <div id="header" style="padding: 1rem 0; background-color: lightblue">
+      <h1 id="main-heading" style="margin: 0">Fruit Shop</h1>
+    </div>
+    <div>
+      <h2 id="basket-heading">Fruits In Basket</h2>
+      <ul class="fruits">
+        <li class="fruit">Banana</li>
+        <li class="fruit">Apple</li>
+        <li class="fruit">Orange</li>
+        <li class="fruit">Kiwi</li>
+      </ul>
+    </div>
+    <div id="thanks"></div>
+  </body>
+  <script>
+        let heading = document.getElementById('main-heading');
+        let header = document.getElementById('header');
+        let basketheading = document.getElementById('basket-heading');
+        let thanks = document.getElementById('thanks');
+         heading.textContent ="Fruit World";
+         heading.style.color='orange';
+         header.style.background="green";
+         header.style.borderBottom=" 2px orange";
+         basketheading.style.color = 'green';
+         thanks.textContent = 'Please visit us again';
+
+
+  </script>
+</html>
